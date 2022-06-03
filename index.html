@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dynamicJsCardsVSinHTML - Parcel Sandbox | #codesandbox.io</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Animals card</h1>
+    <p>
+      Showing picture cards of different animals rendered dynamically with JS
+      versus using HTML
+    </p>
+
+    <main>
+      <!-- SHOWING HOW ITS DONE WITH HTML -->
+      <div>
+        <h2>How it's done with HTML</h2>
+        <p>Showing cards of Lions, done normally with HTML</p>
+        <div class="all-cards">
+          <!-- FIRST CARD -->
+          <article>
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1511208687438-
+							2c5a5abb810c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=
+							format&fit=crop&w=672&q=80"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Brown lion, looking up</h3>
+            </div>
+          </article>
+
+          <!-- SECOND CARD -->
+          <article>
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1040&q=80"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Giant lion, walking</h3>
+            </div>
+          </article>
+
+          <!-- THIRD CARD -->
+          <article>
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1516729557409-298ab938f00c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Angry lion, wants to bite</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- SHOWING HOW ITS DONE DYNAMICALLY WITH JS -->
+      <div>
+        <h2>How it's done dynamically with JS</h2>
+        <p>Showing pictures of elephants, done with JS</p>
+        <h3>JS features used:</h3>
+        <p>
+          Template literals, JS objects, JS arrays, functions, forEach method,
+          document.QuerySelector, thats all.
+        </p>
+
+        <!-- Only structure the template for the cards, the cards will be outputed dynamically based on the number of items in the array. -->
+
+        <!-- It's in this div that we will plug the output of out JS function using the DOM document.QuerySelector. -->
+        <div class="all-elephant-cards"></div>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
